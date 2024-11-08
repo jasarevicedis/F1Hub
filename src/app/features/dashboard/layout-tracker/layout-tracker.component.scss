@@ -3,6 +3,12 @@
     margin-left: 20px;
     height: calc(100vh - 60px - 40px - 20px - 220px);
     display: flex;
-    background-color: rgb(64, 53, 69);
+    background-color: rgb(24, 22, 26);
     margin-top: 20px;
+    justify-content: center;
+    border: 1px solid rgb(65, 58, 58);
+    border-radius: 8px;
+    img {
+        height: 100%;
+    }
 }
