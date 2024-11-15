@@ -2,6 +2,118 @@
     height: 100%;
     width: 350px;
     display: flex;
-    background-color: rgb(75, 64, 92);
+    flex-direction: column;
+    background-color: rgb(114, 99, 136);
     border: 1px solid black;
+    .top-section {
+        height: 80px;
+        width: 100%;
+        //background-color: rgb(153, 166, 206);
+        display: flex;
+        justify-content: space-between;
+        background-color: rgb(126, 111, 148);
+        border-bottom: 1px solid rgb(146, 127, 170);
+        .driver-info-field {
+            margin-top: 10px;
+            margin-left: 10px;
+            height: 50px;
+            //width: 120px;
+            //background-color: blue;
+            display: flex;
+            .driver-img-container {
+                height: 40px;
+                width: 40px;
+                border-radius: 50%;
+                background:url("https://cdn-4.motorsport.com/images/mgl/YEQ1pGwY/s800/lewis-hamilton-mercedes.jpg");
+                background-size: cover;
+                background-position: center;
+                border: 5px solid rgb(102, 79, 202);
+            }
+            .driver-info {
+                display: flex;
+                flex-direction: column;
+                margin-left: 10px;
+                justify-content: space-evenly;
+                .driver-name {
+                    color: white;
+                    font-size: 15px;
+                }
+                .driver-position {
+                    color: white;
+                    font-size: 20px;
+                    font-weight: bolder;
+                }
+            }
+            
+        }
+        .speed-info-field {
+            display: flex;
+            //background-color: red;
+            .gear-and-rms-field {
+                margin-top: 10px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .meter {
+                    height: 50px;
+                }
+                .gear {
+                    font-size: 18px;
+                    color: white;
+                    font-weight: bold;
+                    margin-top: -35px;
+                }
+                .rms {
+                    margin-top: 13px;
+                    color: white;
+                }
+            }
+            .speed-field {
+                display: flex;
+                flex-direction: column;
+                margin-left: 10px;
+                margin-top: 15px;
+                .speed-value {
+                    color: white;
+                    font-size: 20px;
+                    font-weight: bold;
+                }
+                .speed-unit {
+                    color: rgb(207, 193, 223);
+                    font-size: 15px;
+                    font-weight: bolder;
+                }
+            }
+        }
+
+        .tyre-info-field {
+            margin-top: 10px;
+            margin-left: 10px;
+            height: 60px;
+            width: 60px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            //justify-content: center;
+            img {
+                height: 35px;
+                width: 35px;
+            }
+            p {
+                color: white;
+                font-weight: bold;
+                font-size: 16px;
+            }
+        }
+    }
+    .bottom-section {
+        display: flex;
+        height: calc(100% - 80px);
+        .current-lap-section {
+            width: 200px;
+            height: 100%;
+            display: flex;
+            background-color: wheat;
+        }
+    }
 }
