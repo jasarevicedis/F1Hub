@@ -1,0 +1,29 @@
+:host {
+    width: calc(100% - 40px);
+    margin-left: 20px;
+    height: 60px;
+    display: flex;
+    background-color: rgb(64, 53, 69);
+    margin-top: 20px;
+    align-items: center;
+    .base-event-data {
+        display: flex;
+        .flag {
+            margin-left: 10px;
+            height: 35px;
+        }
+        .event-data {
+            margin-left: 10px;
+            justify-content: center;
+            .event-name {
+                font-size: 15px;
+                color: rgb(194, 176, 235);
+            }
+            .lap-status {
+                font-size: 18px;
+                color: white;
+                font-weight: bolder;
+            }
+        }
+    }
+}
