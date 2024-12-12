@@ -1,7 +1,7 @@
-export interface Position {
+export interface TeamRadio {
     date: Date,
     driver_number: number,
     meeting_key: number,
-    position: number,
+    recording_url: string,
     session_key: number
 }
